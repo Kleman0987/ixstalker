@@ -2,7 +2,7 @@
 "skeleton"
 {
 	"base" 			"helix"
-	"title" 		"Skeleton"
-	"author" 		"nebulous"
+	"title" 		"S.T.A.L.K.E.R."
+	"author" 		"Shavargo"
 	"menusystem"	"1"
 }
