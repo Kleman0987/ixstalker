@@ -2,9 +2,9 @@
 -- The shared init file. You'll want to fill out the info for your schema and include any other files that you need.
 
 -- Schema info
-Schema.name = "S.T.A.L.K.E.R."
+Schema.name = "STALKER RP"
 Schema.author = "Shavargo"
-Schema.description = "A S.T.A.L.K.E.R. RP Schema."
+Schema.description = "A STALKER RP Schema."
 
 -- Additional files that aren't auto-included should be included here. Note that ix.util.Include will take care of properly
 -- using AddCSLuaFile, given that your files have the proper naming scheme.
@@ -14,6 +14,8 @@ Schema.description = "A S.T.A.L.K.E.R. RP Schema."
 -- in a library reside in your cl/sh/sv_schema.lua files. Your gamemode hooks should reside in cl/sh/sv_hooks.lua. Logical
 -- groupings of functions should be put into their own libraries in the libs/ folder. Everything in the libs/ folder is loaded
 -- automatically.
+ix.util.Include("libs/thirdparty/sh_netstream2.lua")
+
 ix.util.Include("cl_schema.lua")
 ix.util.Include("sv_schema.lua")
 

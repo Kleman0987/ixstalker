@@ -3,5 +3,5 @@
 
 -- Disables the crosshair permanently.
 function Schema:CharacterLoaded(character)
-	self:ExampleFunction("@serverWelcome", character:GetName())
+	--self:ExampleFunction("@serverWelcome", character:GetName())
 end

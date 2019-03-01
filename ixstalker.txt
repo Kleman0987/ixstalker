@@ -2,7 +2,7 @@
 "skeleton"
 {
 	"base" 			"helix"
-	"title" 		"S.T.A.L.K.E.R."
+	"title" 		"STALKER RP"
 	"author" 		"Shavargo"
 	"menusystem"	"1"
 }

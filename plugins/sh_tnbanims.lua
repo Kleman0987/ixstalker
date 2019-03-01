@@ -8,7 +8,7 @@ ix.anim = ix.anim or {}
 
 ix.anim.tnb = {
 	normal = {
-		[ACT_MP_STAND_IDLE] = {"idle_all_01"},
+		[ACT_MP_STAND_IDLE] = {"idle_all_02"},
 		[ACT_MP_CROUCH_IDLE] = {"cidle_all"},
 		[ACT_MP_WALK] = {"walk_all"},
 		[ACT_MP_CROUCHWALK] = {"cwalk_all"},
@@ -23,7 +23,7 @@ ix.anim.tnb = {
 		[ACT_MP_RUN] = {"run_revolver"},
 		[ACT_LAND] = {ACT_RESET, ACT_RESET},
 		attack = ACT_GESTURE_RANGE_ATTACK_PISTOL,
-		reload = ACT_RELOAD_PISTOL
+		reload = "reload_revolver"
 	},
 	smg = {
 		[ACT_MP_STAND_IDLE] = {"idle_smg1"},
@@ -33,7 +33,17 @@ ix.anim.tnb = {
 		[ACT_MP_RUN] = {"run_smg1"},
 		[ACT_LAND] = {ACT_RESET, ACT_RESET},
 		attack = ACT_GESTURE_RANGE_ATTACK_SMG1,
-		reload = ACT_GESTURE_RELOAD_SMG1
+		reload = "reload_smg1"
+	},
+	ar2 = {
+		[ACT_MP_STAND_IDLE] = {"idle_ar2"},
+		[ACT_MP_CROUCH_IDLE] = {"cidle_ar2"},
+		[ACT_MP_WALK] = {"walk_ar2"},
+		[ACT_MP_CROUCHWALK] = {"cwalk_ar2"},
+		[ACT_MP_RUN] = {"run_ar2"},
+		[ACT_LAND] = {ACT_RESET, ACT_RESET},
+		attack = ACT_GESTURE_RANGE_ATTACK_SMG1,
+		reload = "reload_ar2"
 	},
 	shotgun = {
 		[ACT_MP_STAND_IDLE] = {"idle_shotgun"},
@@ -42,7 +52,7 @@ ix.anim.tnb = {
 		[ACT_MP_CROUCHWALK] = {"cwalk_shotgun"},
 		[ACT_MP_RUN] = {"run_shotgun"},
 		[ACT_LAND] = {ACT_RESET, ACT_RESET},
-		attack = ACT_GESTURE_RANGE_ATTACK_SHOTGUN
+		attack = "reload_shotgun"
 	},
 	grenade = {
 		[ACT_MP_STAND_IDLE] = {"idle_grenade"},
@@ -62,12 +72,14 @@ ix.anim.tnb = {
 		[ACT_LAND] = {ACT_RESET, ACT_RESET},
 		attack = ACT_MELEE_ATTACK_SWING
 	},
-	glide = "jump_holding_glide"
+	glide = "jump_holding_glide",
+	["sit"] = "sit",
+	["sit_zen"] = "sit_zen",
 	vehicle = {
 		["prop_vehicle_prisoner_pod"] = {"podpose", Vector(-3, 0, 0)},
 		["prop_vehicle_jeep"] = {ACT_BUSY_SIT_CHAIR, Vector(14, 0, -14)},
 		["prop_vehicle_airboat"] = {ACT_BUSY_SIT_CHAIR, Vector(8, 0, -20)},
-		chair = {ACT_BUSY_SIT_CHAIR, Vector(1, 0, -23)}
+		chair = {"sit_rollercoaster", Vector(1, 0, -23)}
 	},
 }
 
@@ -305,6 +317,7 @@ ix.anim.SetModelClass("models/tnb/stalker/male_radsuit_seva.mdl", "tnb")
 ix.anim.SetModelClass("models/tnb/stalker/male_radsuit_tubes.mdl", "tnb")
 ix.anim.SetModelClass("models/tnb/stalker/male_seva.mdl", "tnb")
 ix.anim.SetModelClass("models/tnb/stalker/male_skat.mdl", "tnb")
+ix.anim.SetModelClass("models/tnb/stalker/male_skat_exo.mdl", "tnb")
 ix.anim.SetModelClass("models/tnb/stalker/male_skat_bulat.mdl", "tnb")
 ix.anim.SetModelClass("models/tnb/stalker/male_ssp.mdl", "tnb")
 ix.anim.SetModelClass("models/tnb/stalker/male_sunrise.mdl", "tnb")
