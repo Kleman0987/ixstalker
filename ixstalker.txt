@@ -1,8 +1,0 @@
-
-"skeleton"
-{
-	"base" 			"helix"
-	"title" 		"STALKER RP"
-	"author" 		"Shavargo"
-	"menusystem"	"1"
-}
